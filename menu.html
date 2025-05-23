@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Riad Salam | Restaurant Marocain Authentique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="menu-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>رياض السلام</h2>
+                <span>Riad Salam</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                <li><a href="index.html#specialites" class="nav-link">Spécialités</a></li>
+                <li><a href="index.html#propos" class="nav-link">À propos</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Hero Section -->
+    <section class="menu-hero">
+        <div class="menu-hero-overlay"></div>
+        <div class="menu-hero-content">
+            <h1 class="menu-hero-title">Notre Menu Traditionnel</h1>
+            <p class="menu-hero-subtitle">Découvrez les saveurs authentiques du Maroc</p>
+            <div class="menu-hero-decoration">
+                <i class="fas fa-leaf"></i>
+                <span>❋</span>
+                <i class="fas fa-leaf"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Navigation Categories -->
+    <section class="menu-nav-section">
+        <div class="container">
+            <div class="menu-nav-tabs">
+                <button class="menu-tab active" data-category="all">
+                    <i class="fas fa-utensils"></i>
+                    <span>Tous les plats</span>
+                </button>
+                <button class="menu-tab" data-category="entrees">
+                    <i class="fas fa-leaf"></i>
+                    <span>Entrées</span>
+                </button>
+                <button class="menu-tab" data-category="plats">
+                    <i class="fas fa-crown"></i>
+                    <span>Plats Principaux</span>
+                </button>
+                <button class="menu-tab" data-category="desserts">
+                    <i class="fas fa-cookie-bite"></i>
+                    <span>Desserts & Thé</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Cards Section -->
+    <section class="menu-cards-section">
+        <div class="container">
+            <div class="menu-grid">
+                <!-- Plats Principaux -->
+                <div class="menu-card" data-category="plats">
+                    <div class="menu-card-image">
+                        <img src="./images/1.jpg" alt="Couscous Royal">
+                        <div class="menu-card-badge">
+                            <i class="fas fa-crown"></i>
+                            <span>Spécialité</span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Couscous Royal</h3>
+                            <span class="menu-card-price">120 MAD</span>
+                        </div>
+                        <p class="menu-card-description">Couscous traditionnel aux sept légumes, agneau tendre, poulet fermier et merguez épicées, préparé selon la recette ancestrale</p>
+                        <div class="menu-card-tags">
+                            <span class="tag">Traditionnel</span>
+                            <span class="tag">Complet</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="plats">
+                    <div class="menu-card-image">
+                        <img src="./images/2.jpg" alt="Tajine d'Agneau aux Pruneaux">
+                        <div class="menu-card-badge popular">
+                            <i class="fas fa-fire"></i>
+                            <span>Populaire</span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Tajine d'Agneau aux Pruneaux</h3>
+                            <span class="menu-card-price">95 MAD</span>
+                        </div>
+                        <p class="menu-card-description">Agneau mijoté aux pruneaux sucrés, amandes grillées et mélange d'épices traditionnelles, cuit lentement au feu de bois</p>
+                        <div class="menu-card-tags">
+                            <span class="tag">Sucré-Salé</span>
+                            <span class="tag">Feu de bois</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="plats">
+                    <div class="menu-card-image">
+                        <img src="./images/3.jpg" alt="Pastilla au Poulet">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Pastilla au Poulet</h3>
+                            <span class="menu-card-price">85 MAD</span>
+                        </div>
+                        <p class="menu-card-description">Feuilleté traditionnel croustillant au poulet effiloché, amandes torréfiées, cannelle et sucre glace</p>
+                        <div class="menu-card-tags">
+                            <span class="tag">Croustillant</span>
+                            <span class="tag">Festif</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="plats">
+                    <div class="menu-card-image">
+                        <img src="./images/4.jpg" alt="Tajine de Poisson Chermoula">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Tajine de Poisson Chermoula</h3>
+                            <span class="menu-card-price">110 MAD</span>
+                        </div>
+                        <p class="menu-card-description">Poisson frais du jour mariné aux épices chermoula, légumes de saison et olives vertes</p>
+                        <div class="menu-card-tags">
+                            <span class="tag">Frais</span>
+                            <span class="tag">Épicé</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="plats">
+                    <div class="menu-card-image">
+                        <img src="./images/5.jpg" alt="Mechoui d'Agneau">
+                        <div class="menu-card-badge chef">
+                            <i class="fas fa-chef-hat"></i>
+                            <span>Chef</span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Mechoui d'Agneau</h3>
+                            <span class="menu-card-price">130 MAD</span>
+                        </div>
+                        <p class="menu-card-description">Épaule d'agneau rôtie aux herbes fraîches et épices du Maroc, servie avec semoule parfumée</p>
+                        <div class="menu-card-tags">
+                            <span class="tag">Rôti</span>
+                            <span class="tag">Généreux</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entrées -->
+                <div class="menu-card" data-category="entrees">
+                    <div class="menu-card-image">
+                        <img src="./images/6.jpg" alt="Briouates au Fromage">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Briouates au Fromage</h3>
+                            <span class="menu-card-price">35 MAD</span>
+                        </div>
+                        <p class="menu-card-description">Petits triangles croustillants farcis au fromage frais et aux herbes aromatiques, frits à la perfection</p>
+                        <div class="menu-card-tags">
+                            <span class="tag">Végétarien</span>
+                            <span class="tag">Croustillant</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="entrees">
+                    <div class="menu-card-image">
+                        <img src="./images/7.jpg" alt="Salade Marocaine">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Salade Marocaine</h3>
+                            <span class="menu-card-price">30 MAD</span>
+                        </div>
+                        <p class="menu-card-description">Tomates fraîches, concombres croquants, oignons doux, olives noires et vinaigrette à l'huile d'argan</p>
+                        <div class="menu-card-tags">
+                            <span class="tag">Frais</span>
+                            <span class="tag">Sain</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="entrees">
+                    <div class="menu-card-image">
+                        <img src="./images/8.jpg" alt="Zaalouk">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Zaalouk</h3>
+                            <span class="menu-card-price">25 MAD</span>
+                        </div>
+                        <p class="menu-card-description">Caviar d'aubergines aux tomates confites, ail, épices et coriandre fraîche</p>
+                        <div class="menu-card-tags">
+                            <span class="tag">Végétarien</span>
+                            <span class="tag">Traditionnel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-card" data-category="desserts">
+                    <div class="menu-card-image">
+                        <img src="./images/1.jpg" alt="Cornes de Gazelle">
+                        <div class="menu-card-badge sweet">
+                            <i class="fas fa-heart"></i>
+                            <span>Fait maison</span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Cornes de Gazelle</h3>
+                            <span class="menu-card-price">45 MAD</span>
+                        </div>
+                        <p class="menu-card-description">Pâtisseries traditionnelles aux amandes douces et eau de fleur d'oranger, poudre de sucre glace</p>
+                        <div class="menu-card-tags">
+                            <span class="tag">Pâtisserie</span>
+                            <span class="tag">Amandes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="desserts">
+                    <div class="menu-card-image">
+                        <img src="./images/2.jpg" alt="Thé à la Menthe">
+                        <div class="menu-card-badge tradition">
+                            <i class="fas fa-star"></i>
+                            <span>Tradition</span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Thé à la Menthe</h3>
+                            <span class="menu-card-price">15 MAD</span>
+                        </div>
+                        <p class="menu-card-description">Thé vert traditionnel à la menthe fraîche, sucre et rituel de service authentique</p>
+                        <div class="menu-card-tags">
+                            <span class="tag">Digestif</span>
+                            <span class="tag">Menthe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="desserts">
+                    <div class="menu-card-image">
+                        <img src="./images/3.jpg" alt="Chebakia">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Chebakia</h3>
+                            <span class="menu-card-price">40 MAD</span>
+                        </div>
+                        <p class="menu-card-description">Pâtisseries au miel d'oranger et graines de sésame grillées, spécialité du Ramadan</p>
+                        <div class="menu-card-tags">
+                            <span class="tag">Miel</span>
+                            <span class="tag">Festif</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="menu-cta-section">
+        <div class="container">
+            <div class="menu-cta-content">
+                <h2>Prêt à déguster ?</h2>
+                <p>Réservez votre table dès maintenant et laissez-vous transporter par les saveurs du Maroc</p>
+                <a href="index.html#contact" class="cta-button">Réserver une table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>رياض السلام</h3>
+                    <p>L'authenticité de la cuisine marocaine depuis 1985</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="index.html#specialites">Spécialités</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Marrakech, Maroc</p>
+                    <p><i class="fas fa-phone"></i> +212 5 24 43 21 87</p>
+                    <p><i class="fas fa-envelope"></i> contact@riadsalam.ma</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Riad Salam. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="menu-script.js"></script>
+</body>
+</html>

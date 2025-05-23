@@ -1,0 +1,42 @@
+{
+  "restaurant": {
+    "name": "Riad Salam",
+    "nameArabic": "رياض السلام",
+    "tagline": "L'authenticité de la cuisine marocaine depuis 1985",
+    "description": "Un voyage culinaire au cœur du Maroc, où chaque plat raconte une histoire",
+    "foundedYear": 1985
+  },
+  "contact": {
+    "address": {
+      "street": "Avenue Mohammed V",
+      "district": "Quartier Gueliz",
+      "city": "Marrakech",
+      "country": "Maroc"
+    },
+    "phone": "+212 5 24 43 21 87",
+    "email": "contact@riadsalam.ma",
+    "hours": {
+      "lunch": "12h00 - 15h00",
+      "dinner": "19h00 - 23h00",
+      "days": "Lundi - Dimanche"
+    }
+  },
+  "social": {
+    "facebook": "#",
+    "instagram": "#",
+    "whatsapp": "#"
+  },
+  "colors": {
+    "primary": "#d4af37",
+    "secondary": "#1a2332",
+    "accent": "#f1c40f"
+  },
+  "currency": "MAD",
+  "languages": ["fr", "ar"],
+  "features": {
+    "darkTheme": true,
+    "reservationForm": true,
+    "smoothScrolling": true,
+    "mobileMenu": true
+  }
+}

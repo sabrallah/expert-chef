@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riad Salam - Restaurant Marocain Authentique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>رياض السلام</h2>
+                <span>Riad Salam</span>
+            </div>            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="#specialites" class="nav-link">Spécialités</a></li>
+                <li><a href="#propos" class="nav-link">À propos</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>    <!-- Hero Section -->
+    <section id="accueil" class="hero">        <!-- Slideshow container -->
+        <div class="hero-slideshow">
+            <div class="hero-slide active"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+        </div>
+        
+        <!-- Navigation buttons -->
+        <button class="slideshow-nav prev" onclick="changeSlide(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slideshow-nav next" onclick="changeSlide(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <!-- Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">Bienvenue chez Riad Salam</h1>
+            <p class="hero-subtitle">Découvrez l'authenticité de la cuisine marocaine traditionnelle</p>
+            <p class="hero-description">Un voyage culinaire au cœur du Maroc, où chaque plat raconte une histoire</p>
+            <a href="menu.html" class="cta-button">Découvrir notre menu</a>
+        </div>
+          <!-- Slideshow indicators -->
+        <div class="slideshow-indicators">
+            <span class="indicator active" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
+            <span class="indicator" onclick="currentSlide(3)"></span>
+            <span class="indicator" onclick="currentSlide(4)"></span>
+            <span class="indicator" onclick="currentSlide(5)"></span>
+            <span class="indicator" onclick="currentSlide(6)"></span>
+            <span class="indicator" onclick="currentSlide(7)"></span>
+            <span class="indicator" onclick="currentSlide(8)"></span>
+        </div>
+          <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Specialités Section -->
+    <section id="specialites" class="specialites-section">
+        <div class="container">
+            <h2 class="section-title">Nos Spécialités</h2>
+            <div class="specialites-grid">
+                <div class="specialite-card">
+                    <div class="card-image">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Couscous du Vendredi</h3>
+                    <p>Notre couscous royal traditionnel, préparé chaque vendredi selon la recette familiale transmise de génération en génération.</p>
+                </div>
+                <div class="specialite-card">
+                    <div class="card-image">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Tajines au Feu de Bois</h3>
+                    <p>Nos tajines sont cuits lentement au feu de bois pour révéler tous les arômes des épices marocaines authentiques.</p>
+                </div>
+                <div class="specialite-card">
+                    <div class="card-image">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Épices Fraîches</h3>
+                    <p>Toutes nos épices sont importées directement du souk de Marrakech et moulues fraîchement chaque jour.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos Section -->
+    <section id="propos" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Notre Histoire</h2>
+                    <p>Fondé en 1985 par la famille Benali, Riad Salam perpétue depuis 40 ans la tradition culinaire marocaine dans le respect des recettes ancestrales.</p>
+                    <p>Notre chef, Hassan Benali, a appris l'art de la cuisine marocaine auprès de sa grand-mère dans les cuisines du palais royal de Fès. Chaque plat est préparé avec passion et authenticité.</p>
+                    <p>Nous nous engageons à utiliser uniquement des ingrédients frais et locaux, sourçés directement auprès des producteurs marocains.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <span>40 ans d'expérience</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Recettes familiales</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>Ingrédients locaux</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-utensils"></i>
+                        <p>Cuisine traditionnelle marocaine</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Nous Contacter</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Avenue Mohammed V<br>Quartier Gueliz, Marrakech<br>Maroc</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+212 5 24 43 21 87</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horaires</h4>
+                            <p>Lundi - Dimanche<br>12h00 - 15h00<br>19h00 - 23h00</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@riadsalam.ma</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-form">
+                    <h3>Réserver une table</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Votre téléphone" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Nombre de personnes</option>
+                                <option value="2">2 personnes</option>
+                                <option value="4">4 personnes</option>
+                                <option value="6">6 personnes</option>
+                                <option value="8">8+ personnes</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn">Réserver</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>رياض السلام</h3>
+                    <p>L'authenticité de la cuisine marocaine depuis 1985</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="#specialites">Spécialités</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Marrakech, Maroc</p>
+                    <p><i class="fas fa-phone"></i> +212 5 24 43 21 87</p>
+                    <p><i class="fas fa-envelope"></i> contact@riadsalam.ma</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Riad Salam. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
